@@ -21,9 +21,65 @@
         </header>
         
         <section class="container-fluid col-md-2 col-xg-4">
-            <form>
+            <form>  
+                <label for="Status">Status dos Servidores</label>
                 <div class="form-group">
-                    <label for="Status">Status dos Servidores</label>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="Ativo">
+                        <label class="custom-control-label" for="Ativo">Ativo</label>
+                    </div>
+                    
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="Inativos">
+                        <label class="custom-control-label" for="Inativos">Inativos</label>
+                    </div>
+                </div>
+                
+                <label for="TipoServidor">Tipo de Servidor</label>
+                <div class="form-group">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="Virtual">
+                        <label class="custom-control-label" for="Virtual">Virtual</label>
+                    </div>
+                    
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="Fisico">
+                        <label class="custom-control-label" for="Fisico">Fisico</label>
+                    </div>
+                </div>
+                
+                <label for="Paginas">Número de itens por páginas</label>
+                <div class="form-group">
+                    <select class="form-control" id="ItensPaginas">
+                        <option>10</option>
+                        <option>20</option>
+                        <option>30</option>
+                        <option>40</option>
+                        <option>50</option>
+                    </select>
+                </div>
+                
+                <label for="Itens">Itens Padrões da Tela Inicial</label>
+                <div class="form-group">
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="IP" value="IP">
+                        <label class="form-check-label" for="IP">IP</label>
+                    </div>
+                    
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="Conteudo" value="Conteudo">
+                        <label class="form-check-label" for="Conteudo">Conteúdo</label>
+                    </div>
+                    
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="EspacoDisco" value="EspacoDisco">
+                        <label class="form-check-label" for="EspacoDisco">Espaço em Disco</label>
+                    </div>
+                    
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="Conteudo" value="Conteudo">
+                        <label class="form-check-label" for="Conteudo">Conteúdo</label>
+                    </div>
                 </div>
             </form>
         </section>

@@ -1,12 +1,17 @@
 header{
-    margin-left: 35%;
+    background-color: #CFD0E6;
 }
 
 section{
     font-weight: bold;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
-img{
-    width: 100%;
+button{
+    margin: 0 auto;
+}
+
+a{
+    margin: 0 auto;
+    color: #4873FF;
 }
