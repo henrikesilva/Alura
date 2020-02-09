@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <header class="container-fluid">
+        <header class="container-fluid col-md-12 col-sm-12">
             <nav class="navbar navbar-light">
                 <a href="index.html" class="navbar-brand row">
                     <img src="https://www.rbrasilsolucoes.com.br/wp-content/uploads/2019/11/unidas-300x192.png" width="40%" alt="Inicio">
@@ -20,38 +20,37 @@
             </nav>
         </header>
         
-        <section class="container-fluid col-md-2 col-xg-4">
-            <form>  
-                <label for="Status">Status dos Servidores</label>
+        <section class="container-fluid col-md-4 col-xg-4 configuracao">
+            <form action="POST">
+                <h5>Status dos Servidores</h5>
                 <div class="form-group">
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="Ativo">
+                    <div class="custom-control custom-switch border-top">
+                        <input type="checkbox" checked class="custom-control-input" id="Ativo">
                         <label class="custom-control-label" for="Ativo">Ativo</label>
                     </div>
                     
                     <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="Inativos">
-                        <label class="custom-control-label" for="Inativos">Inativos</label>
+                        <input type="checkbox" class="custom-control-input" id="Inativo">
+                        <label class="custom-control-label" for="Inativo">Inativo</label>
                     </div>
                 </div>
                 
-                <label for="TipoServidor">Tipo de Servidor</label>
+                <h5>Tipo de Servidor</h5>
                 <div class="form-group">
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="Virtual">
+                    <div class="custom-control custom-switch border-top">
+                        <input type="checkbox" checked class="custom-control-input" id="Virtual">
                         <label class="custom-control-label" for="Virtual">Virtual</label>
                     </div>
                     
                     <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="Fisico">
+                        <input type="checkbox" checked class="custom-control-input" id="Fisico">
                         <label class="custom-control-label" for="Fisico">Fisico</label>
                     </div>
                 </div>
                 
-                <label for="Paginas">Número de itens por páginas</label>
+                <h5>Número de itens por páginas</h5>
                 <div class="form-group">
                     <select class="form-control" id="ItensPaginas">
-                        <option>10</option>
                         <option>20</option>
                         <option>30</option>
                         <option>40</option>
@@ -59,27 +58,141 @@
                     </select>
                 </div>
                 
-                <label for="Itens">Itens Padrões da Tela Inicial</label>
-                <div class="form-group">
-                    <div class="form-check form-check-inline">
-                        <input type="checkbox" class="form-check-input" id="IP" value="IP">
-                        <label class="form-check-label" for="IP">IP</label>
-                    </div>
-                    
-                    <div class="form-check form-check-inline">
-                        <input type="checkbox" class="form-check-input" id="Conteudo" value="Conteudo">
-                        <label class="form-check-label" for="Conteudo">Conteúdo</label>
-                    </div>
-                    
-                    <div class="form-check form-check-inline">
-                        <input type="checkbox" class="form-check-input" id="EspacoDisco" value="EspacoDisco">
-                        <label class="form-check-label" for="EspacoDisco">Espaço em Disco</label>
-                    </div>
-                    
-                    <div class="form-check form-check-inline">
-                        <input type="checkbox" class="form-check-input" id="Conteudo" value="Conteudo">
-                        <label class="form-check-label" for="Conteudo">Conteúdo</label>
-                    </div>
+                <h5>Itens Padrões da Tela Inicial</h5>
+                <div class="table-responsive">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <!-- 1 -->
+                            <tr class="border-top">
+                                <!-- 1 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="IP" value="IP">
+                                    <label class="form-check-label" for="IP">IP</label>
+                                </td>
+
+                                <!-- 2 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Conteudo" value="Conteudo">
+                                    <label class="form-check-label" for="Conteudo">Conteúdo</label>
+                                </td>
+
+                                <!-- 3 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Ambiente" value="Ambiente">
+                                    <label class="form-check-label" for="Ambiente">Ambiente</label>
+                                </td>
+                            </tr>
+
+                            <!-- 2 -->
+                            <tr>
+                                <!-- 1 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Hostname" value="Hostname">
+                                    <label class="form-check-label" for="Hostname">Hostname</label>
+                                </td>
+
+                                <!-- 2 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="EspacoDisco" value="EspacoDisco">
+                                    <label class="form-check-label" for="EspacoDisco">Espaço em Disco</label>
+                                </td>
+
+                                <!-- 3 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Finalidade" value="Finalidade">
+                                    <label class="form-check-label" for="Finalidade">Finalidade</label>
+                                </td>
+                            </tr>
+
+                            <!-- 3 -->
+                            <tr>
+                                <!-- 1 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Datacenter" value="Datacenter">
+                                    <label class="form-check-label" for="Datacenter">Datacenter</label>
+                                </td>
+
+                                <!-- 2 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Memoria" value="Memoria">
+                                    <label class="form-check-label" for="Memoria">Memória</label>
+                                </td>
+
+                                <!-- 3 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="SistemaOperacional" value="SistemaOperacional">
+                                    <label class="form-check-label" for="SistemaOperacional">Sistema Operacional</label>
+                                </td>
+                            </tr>
+
+                            <!-- 4 -->
+                            <tr>
+                                <!-- 1 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Descricao" value="Descricao">
+                                    <label class="form-check-label" for="Descricao">Descrição</label> 
+                                </td>
+
+                                <!-- 2 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="CPU" value="CPU">
+                                    <label class="form-check-label" for="CPU">CPU</label> 
+                                </td>
+
+                                <!-- 3 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Distribuicao" value="Distribuicao">
+                                    <label class="form-check-label" for="Distribuicao">Distribuição</label> 
+                                </td>
+                            </tr>
+
+                            <!-- 5 -->
+                            <tr>
+                                <!-- 1 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Status" value="Status">
+                                    <label class="form-check-label" for="Status">Status</label>
+                                </td>
+
+                                <!-- 2 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Responsavel" value="Responsavel">
+                                    <label class="form-check-label" for="Responsavel">Responsavel</label>
+                                </td>
+
+                                <!-- 3 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Versao" value="Versao">
+                                    <label class="form-check-label" for="Versao">Versão</label>
+                                </td>
+                            </tr>
+
+                            <!-- 6 -->
+                            <tr>
+                                <!-- 1 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Tipo" value="Tipo">
+                                    <label class="form-check-label" for="Tipo">Tipo</label>
+                                </td>
+
+                                <!-- 2 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Observacao" value="Observacao">
+                                    <label class="form-check-label" for="Observacao">Observação</label>
+                                </td>
+
+                                <!-- 3 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Backup" value="Backup">
+                                    <label class="form-check-label" for="Backup">Backup</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="row">
+                    <button type="submit" class="btn btn-primary btn-config">Salvar Alterações</button>
                 </div>
             </form>
         </section>

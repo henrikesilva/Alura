@@ -3,8 +3,11 @@ header{
 }
 
 section{
-    font-weight: bold;
     margin-top: 5%;
+}
+
+h5{
+    text-align: center;
 }
 
 button{
@@ -14,4 +17,20 @@ button{
 a{
     margin: 0 auto;
     color: #4873FF;
+}
+
+td label{
+    text-align: center;
+}
+
+div.form-group{
+    text-align: center;
+}
+
+.login{
+    font-weight: bold;
+}
+
+.btn-config{
+    margin-left: 40%;
 }
