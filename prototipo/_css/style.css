@@ -1,12 +1,19 @@
 header{
     background-color: #CFD0E6;
+    height: 80px;
 }
 
 section{
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
-h5{
+footer{
+    padding-top: 1%;
+    text-align: center;
+    font-size: 15px;
+}
+
+h6{
     text-align: center;
 }
 
@@ -23,14 +30,20 @@ td label{
     text-align: center;
 }
 
-div.form-group{
-    text-align: center;
-}
-
 .login{
     font-weight: bold;
+}
+
+.custom-control{
+    text-align: center;
+    padding-left: 0;
+}
+
+.navbar-brand{
+    padding-top: 0%;
 }
 
 .btn-config{
     margin-left: 40%;
 }
+

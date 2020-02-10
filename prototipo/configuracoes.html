@@ -5,24 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="./bootstrap/bootstrap.min.css"/>
 
-        <link rel="stylesheet" href="./_css/style.css">
-        <title>Sistema Inventario - Login</title>
+        <link rel="shortcut icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" href="./_css/style.css"/>
+        <title>Sistema Inventario - Configuracao</title>
     </head>
 
     <body>
         <header class="container-fluid col-md-12 col-sm-12">
             <nav class="navbar navbar-light">
-                <a href="index.html" class="navbar-brand row">
+                <a href="#" class="navbar-brand row">
                     <img src="https://www.rbrasilsolucoes.com.br/wp-content/uploads/2019/11/unidas-300x192.png" width="40%" alt="Inicio">
                 </a>
             </nav>
         </header>
         
-        <section class="container-fluid col-md-4 col-xg-4 configuracao">
-            <form action="POST">
-                <h5>Status dos Servidores</h5>
+        <section class="container-fluid col-md-4 col-xl-4 configuracao">
+            <form action="#">
+                <h6>Status dos Servidores</h6>
                 <div class="form-group">
                     <div class="custom-control custom-switch border-top">
                         <input type="checkbox" checked class="custom-control-input" id="Ativo">
@@ -35,7 +36,7 @@
                     </div>
                 </div>
                 
-                <h5>Tipo de Servidor</h5>
+                <h6>Tipo de Servidor</h6>
                 <div class="form-group">
                     <div class="custom-control custom-switch border-top">
                         <input type="checkbox" checked class="custom-control-input" id="Virtual">
@@ -48,7 +49,7 @@
                     </div>
                 </div>
                 
-                <h5>Número de itens por páginas</h5>
+                <h6>Número de itens por páginas</h6>
                 <div class="form-group">
                     <select class="form-control" id="ItensPaginas">
                         <option>20</option>
@@ -58,130 +59,132 @@
                     </select>
                 </div>
                 
-                <h5>Itens Padrões da Tela Inicial</h5>
-                <div class="table-responsive">
+                <h6>Itens Padrões da Tela Inicial</h6>
+                <div class="table-responsive-sm">
                     <table class="table table-borderless">
                         <tbody>
-                            <!-- 1 -->
+                            <!-- Linha 1 -->
                             <tr class="border-top">
-                                <!-- 1 -->
+                                <!-- Coluna 1 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="IP" value="IP">
                                     <label class="form-check-label" for="IP">IP</label>
                                 </td>
 
-                                <!-- 2 -->
+                                <!-- Coluna 2 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="Conteudo" value="Conteudo">
                                     <label class="form-check-label" for="Conteudo">Conteúdo</label>
                                 </td>
 
-                                <!-- 3 -->
+                                <!-- Coluna 3 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="Ambiente" value="Ambiente">
                                     <label class="form-check-label" for="Ambiente">Ambiente</label>
                                 </td>
                             </tr>
 
-                            <!-- 2 -->
+                            <!-- Linha 2 -->
                             <tr>
-                                <!-- 1 -->
+                                <!-- Coluna 1 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="Hostname" value="Hostname">
                                     <label class="form-check-label" for="Hostname">Hostname</label>
                                 </td>
 
-                                <!-- 2 -->
+                                <!-- Coluna 2 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="EspacoDisco" value="EspacoDisco">
                                     <label class="form-check-label" for="EspacoDisco">Espaço em Disco</label>
                                 </td>
 
-                                <!-- 3 -->
+                                <!-- Coluna 3 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="Finalidade" value="Finalidade">
                                     <label class="form-check-label" for="Finalidade">Finalidade</label>
                                 </td>
                             </tr>
 
-                            <!-- 3 -->
+                            <!-- Linha 3 -->
                             <tr>
-                                <!-- 1 -->
+                                <!-- Coluna 1 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="Datacenter" value="Datacenter">
                                     <label class="form-check-label" for="Datacenter">Datacenter</label>
                                 </td>
 
-                                <!-- 2 -->
+                                
+                                <!-- Coluna 3 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="SistemaOperacional" value="SistemaOperacional">
+                                    <label class="form-check-label" for="SistemaOperacional">Sistema Operacional</label>
+                                </td>
+
+                                <!-- Coluna 2 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="Memoria" value="Memoria">
                                     <label class="form-check-label" for="Memoria">Memória</label>
                                 </td>
 
-                                <!-- 3 -->
-                                <td>
-                                    <input type="checkbox" class="form-check-input" id="SistemaOperacional" value="SistemaOperacional">
-                                    <label class="form-check-label" for="SistemaOperacional">Sistema Operacional</label>
-                                </td>
                             </tr>
 
-                            <!-- 4 -->
+                            <!-- Linha 4 -->
                             <tr>
-                                <!-- 1 -->
+                                <!-- Coluna 1 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="Descricao" value="Descricao">
                                     <label class="form-check-label" for="Descricao">Descrição</label> 
-                                </td>
+                                </td>   
 
-                                <!-- 2 -->
-                                <td>
-                                    <input type="checkbox" class="form-check-input" id="CPU" value="CPU">
-                                    <label class="form-check-label" for="CPU">CPU</label> 
-                                </td>
-
-                                <!-- 3 -->
+                                <!-- Coluna 2 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="Distribuicao" value="Distribuicao">
                                     <label class="form-check-label" for="Distribuicao">Distribuição</label> 
                                 </td>
+
+                                <!-- Coluna 3 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="CPU" value="CPU">
+                                    <label class="form-check-label" for="CPU">CPU</label> 
+                                </td>
                             </tr>
 
-                            <!-- 5 -->
+                            <!-- Linha 5 -->
                             <tr>
-                                <!-- 1 -->
+                                <!-- Coluna 1 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="Status" value="Status">
                                     <label class="form-check-label" for="Status">Status</label>
                                 </td>
 
-                                <!-- 2 -->
-                                <td>
-                                    <input type="checkbox" class="form-check-input" id="Responsavel" value="Responsavel">
-                                    <label class="form-check-label" for="Responsavel">Responsavel</label>
-                                </td>
-
-                                <!-- 3 -->
+                                <!-- Coluna 2 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="Versao" value="Versao">
                                     <label class="form-check-label" for="Versao">Versão</label>
                                 </td>
+
+                                <!-- Coluna 3 -->
+                                <td>
+                                    <input type="checkbox" class="form-check-input" id="Responsavel" value="Responsavel">
+                                    <label class="form-check-label" for="Responsavel">Responsável</label>
+                                </td>
                             </tr>
 
-                            <!-- 6 -->
+                            <!-- Linha 6 -->
                             <tr>
-                                <!-- 1 -->
+                                <!-- Coluna 1 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="Tipo" value="Tipo">
                                     <label class="form-check-label" for="Tipo">Tipo</label>
                                 </td>
 
-                                <!-- 2 -->
+                                <!-- Coluna 2 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="Observacao" value="Observacao">
                                     <label class="form-check-label" for="Observacao">Observação</label>
                                 </td>
 
-                                <!-- 3 -->
+                                <!-- Coluna 3 -->
                                 <td>
                                     <input type="checkbox" class="form-check-input" id="Backup" value="Backup">
                                     <label class="form-check-label" for="Backup">Backup</label>
@@ -191,11 +194,17 @@
                     </table>
                 </div>
                 
-                <div class="row">
+                <div class="text-right">
                     <button type="submit" class="btn btn-primary btn-config">Salvar Alterações</button>
                 </div>
             </form>
         </section>
+
+        <footer>
+            <div class="card-footer">
+                <p class="text-muted">&#x24B8; Unidas 2020 - Todos os Direitos Reservados</p>
+            </div>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
