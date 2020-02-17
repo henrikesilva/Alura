@@ -1,0 +1,119 @@
+#cabecalho{
+	background-color: rgb(0,79,153);
+    height: 83px;
+}
+
+#logo{
+	padding: 10px;
+}
+
+.inicio{
+	position: relative;
+	padding-top: 30px;
+	left: 250px;
+}
+
+.inicio a{
+	color: #fff;
+	font-size: 1.2em;
+	text-decoration:none;
+}
+
+.formulario{
+	position: relative;
+	width: auto;
+	max-width: 710px;
+	left: 200px;
+	display: block;
+}
+
+.formulario h2{
+    width: 100%;
+	font-size: 1.5em;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.principal{
+	border:1px solid #ccc;
+	line-height: 30px;
+    border-radius: 15px;
+	margin: 20px 10px 10px 10px;
+	padding: 10px;
+	width: 100%;
+}
+
+.diversos{
+	border:1px solid #ccc;
+	line-height: 30px;
+    border-radius: 15px;
+	margin: 10px;
+	padding: 10px;
+	width: 100%;
+}
+
+.tres{
+	width: 33.33%;
+	display: grid;
+	align-items: center
+}
+
+.dois{
+	width: 50%;
+	display: grid;
+	align-items: center
+}
+
+.um{
+	width: 100%;
+	display: grid;
+	align-items: center
+}
+
+div{
+	float: left;
+}
+div label{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+div input, select{
+	margin: 10px 10px 5px 10px;
+}
+
+div select{
+	position: relative;
+}
+
+.botao{
+	position: relative;
+	left: 40%;
+}
+
+input[type=text],
+select,
+textarea{
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+	outline: none;
+}
+
+button[type=submit]{
+	background-color: rgb(0,79,153);
+	color: #fff;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+	border-radius: 15px;
+}
+
+.botao{
+	padding-top: 10px;
+}

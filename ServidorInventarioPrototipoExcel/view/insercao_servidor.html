@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="../Style/estilo.css">
+        <link rel="stylesheet" href="../Style/estilo_insercao.css">
+        <link rel="shortcut icon" href="../image/favicon.ico"/>
+    </head>
+
+    <body>
+        <header class="container-fluid col-sm-12 col-lg-12"> 
+            <nav class="navbar navbar-expand-lg navbar-dark col-sm-12">
+                <img src="../image/logo.png" alt="Unidas">
+
+                <!-- Botão responsivo -->
+                <button class="navbar-toggler text-right" type="button" data-toggle="collapse" data-target="#menuResponsivo" aria-controls="menuResponsivo" aria-expanded="false" aria-label="Alterna Navegacao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Itens do Menu -->
+                <div class="collapse navbar-collapse col-sm-10" id="menuResponsivo">
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./TelaInicial.html">Inicio</a>
+                        </li>
+
+                        <!-- Dropdown Configurações -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="./configuracoes.html">Configurações</a>
+                        </li>
+
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="./Historico.html">Histórico</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+	
+	<form class="formulario" method="post">
+		<div class="principal">
+			<h2>Servidor</h2>
+			<div class="tres">
+				<label for="ip">IP</label>
+				<input type="text" id="ip" name="ip" placeholder="Digite o IP">
+			</div>
+			<div class="tres">
+				<label for="hostname">Hostname</label>
+				<input type="text" id="hostname" name="hostname" placeholder="Digite o Hostname">
+			</div>
+			<div class="tres">
+				<label for="hostname">Status</label>
+				<select name="select">
+					<option value="valor1">Ativo</option> 
+					<option value="valor2">Inativo</option>
+				  </select>
+			</div>
+			<div class="dois">
+				<label for="conteudo">Conteúdo</label>
+				<input type="text" id="conteudo" name="conteudo" placeholder="Digite o conteudo">
+			</div>
+			<div class="dois">
+				<label for="tipo">Tipo</label>
+				<input type="text" id="tipo" name="tipo" placeholder="Digite o tipo">
+			</div>
+			<div class="tres">
+				<label for="cpu">CPU</label>
+				<input type="text" id="cpu" name="cpu" placeholder="Digite o CPU">
+			</div>
+			<div class="tres">
+				<label for="disco">Espaço em Disco</label>
+				<input type="text" id="disco" name="disco" placeholder="Digite o espaço em disco">
+			</div>
+			<div class="tres">
+				<label for="memoria">Memória</label>
+				<input type="text" id="memoria" name="memoria" placeholder="Digite a memória">
+			</div>
+			<div class="um">
+				<label for="observacao">Observação</label>
+				<input type="text" id="observacao" name="observacao" placeholder="Digite a observação">
+			</div>
+		</div>
+
+		<div class="diversos">
+			<div class="tres">
+				<h2>Backup</h2>
+				<select name="select">
+					<option value="valor1">Valor 1</option> 
+					<option value="valor2">Valor 2</option>
+					<option value="valor3">Valor 3</option>
+				  </select>
+			</div>
+			<div class="tres">
+				<h2>Ambiente</h2>
+				<select name="select">
+					<option value="valor1">Valor 1</option> 
+					<option value="valor2">Valor 2</option>
+					<option value="valor3">Valor 3</option>
+				  </select>
+			</div>
+			<div class="tres">
+				<h2>Datacenter</h2>
+				<select name="select">
+					<option value="valor1">Valor 1</option> 
+					<option value="valor2">Valor 2</option>
+					<option value="valor3">Valor 3</option>
+				  </select>
+			</div>
+		</div>
+
+		<div class="diversos">
+				<h2>Sistema Operacional</h2>
+			<div class="tres">
+				<label for="so">Sistema Operacional</label>
+				<select name="select">
+					<option value="valor1">Valor 1</option> 
+					<option value="valor2">Valor 2</option>
+					<option value="valor3">Valor 3</option>
+				  </select>
+			</div>
+			<div class="tres">
+				<label for="distribuicao">Distribuição</label>
+				<select name="select">
+					<option value="valor1">Valor 1</option> 
+					<option value="valor2">Valor 2</option>
+					<option value="valor3">Valor 3</option>
+				  </select>
+			</div>
+			<div class="tres">
+				<label for="versao">Versão</label>
+				<select name="select">
+					<option value="valor1">Valor 1</option> 
+					<option value="valor2">Valor 2</option>
+					<option value="valor3">Valor 3</option>
+				  </select>
+			</div>
+		</div>
+
+		<div class="diversos">
+			<div class="dois">
+				<h2>Responsável</h2>
+				<select name="select">
+					<option value="valor1">Valor 1</option> 
+					<option value="valor2">Valor 2</option>
+					<option value="valor3">Valor 3</option>
+				  </select>
+			</div>
+			<div class="dois">
+				<h2>Finalidade</h2>
+				<select name="select">
+					<option value="valor1">Valor 1</option> 
+					<option value="valor2">Valor 2</option>
+					<option value="valor3">Valor 3</option>
+				  </select>
+			</div>
+			<div class="botao">
+				<button type="submit" class="btn btn-primary">Enviar</button>
+			</div>
+        </div>
+	</form>
+</body>
+</html>

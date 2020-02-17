@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset   ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="../Style/estilo.css">
+        <link rel="shortcut icon" href="../image/favicon.ico"/>
+    </head>
+
+    <body>
+        <header class="container-fluid col-sm-12 col-lg-12"> 
+            <nav class="navbar navbar-expand-lg navbar-dark col-sm-12">
+                <img src="../image/logo.png" alt="Unidas">
+
+                <!-- Botão responsivo -->
+                <button class="navbar-toggler text-right" type="button" data-toggle="collapse" data-target="#menuResponsivo" aria-controls="menuResponsivo" aria-expanded="false" aria-label="Alterna Navegacao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Itens do Menu -->
+                <div class="collapse navbar-collapse col-sm-10" id="menuResponsivo">
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./TelaInicial.html">Inicio</a>
+                        </li>
+
+                        <!-- Dropdown Configurações -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./configuracoes.html">Configurações</a>
+                        </li>
+
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="./Historico.html">Histórico</a>
+                        </li>
+                    </ul>
+
+                    <div class="align-self-end ml-auto">
+                        <button onclick="window.location.href='./insercao_servidor.html'" type="button" class="btn btn-primary center-block">Novo Item</button>
+                    </div>
+                    
+                </div>
+            </nav>
+        </header>
+        
+        <section class="container-fluid col-sm-7">
+            
+            <div class="container col-sm-6 text-center">
+                <h5>Opções Default</h5>
+                
+                <form action="#">
+                    <div class="mt-4">
+                        <h6>Mostrar Servidores Inativos</h6>
+                    </div>
+                    
+
+                    <div class="form-group border-top">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" checked class="custom-control-input" id="Ativo">
+                            <label class="custom-control-label" for="Ativo">Sim</label>
+                        </div>
+                    </div>
+                
+                    <!-- Seleção do número de itens na pagina inicial -->
+                    <h6>Número de itens por páginas</h6>
+                    <div class="form-group">
+                        <select class="form-control" id="ItensPaginas">
+                            <option>20</option>
+                            <option>30</option>
+                            <option>40</option>
+                            <option>50</option>
+                        </select>
+                    </div>
+
+                    <!-- Botão Salvar -->
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary center-block">Salvar Alterações</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="container-fluid">
+            <div class="card-footer text-center">
+                <p class="text-muted">&#x24B8; Unidas 2020 - Todos os Direitos Reservados</p>
+            </div>
+        </footer>
+
+        <!-- SCRIPTS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(0,79,153);
+}
+
+/* Estilo padrão para o conteudo no centro das paginas */
+section{
+    height: 73%;
+    padding-top: 15%;
+}
+
+label{
+    color: white;
+    font-weight: bold;
+}
+
+a{
+    color: white;
+}
+
+/* Estilo padrão para o Footer */
+footer{
+    margin-top: 3%;
+    text-align: center;
+    font-size: 15px;
+}
