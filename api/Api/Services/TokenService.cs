@@ -12,7 +12,7 @@ namespace Api.Services
 {
     public static class TokenService
     {
-        public static string GenerateToken(Usuario usuario)
+        public static string GenerateToken(string user, string senha)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(PrivateKey.Secret);
@@ -20,7 +20,7 @@ namespace Api.Services
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Actor, usuario.Login)
+                    new Claim(ClaimTypes.Name, user)
                 }),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };

@@ -24,16 +24,17 @@ namespace Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<dynamic>> Login([FromBody] Usuario usuario)
+        public ActionResult<dynamic> Login([FromBody] Usuario usuario)
         {
-            var user = _usuarioRepository.BuscarUsuario(usuario.Login, usuario.Senha);
+            var user = usuario.Login;
+            var pass = usuario.Senha;
 
-            if (user == null)
+            if (user == null && pass == null)
             {
                 return NotFound(new { messge = "Usuario ou senha invalidos" });
             }
 
-            var token = TokenService.GenerateToken(user);
+            var token = TokenService.GenerateToken(user, pass);
             return new
             {
                 login = usuario.Login,
