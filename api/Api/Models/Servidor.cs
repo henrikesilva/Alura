@@ -7,15 +7,21 @@ namespace Api.Models
 {
     public class Servidor
     {
-        public int ServidorId { get; set; }
-        public string Ip { get; set; }
+        public int ServidorID { get; set; }
+        public string IP { get; set; }
         public string Hostname { get; set; }
         public string Observacao { get; set; }
-        public string Status { get; set; }
-        private string TipoServidor { get; set; }
-        private string EspacoDisco { get; set; }
-        private string Cpu { get; set; }
-        private string Memoria { get; set; }
-        private string Conteudo { get; set; }
+        public bool Status { get; set; }
+        public string TipoServidor { get; set; }
+        public int EspacoDisco { get; set; }
+        public int Cpu { get; set; }
+        public int Memoria { get; set; }
+        public string Conteudo { get; set; }
+        public override string ToString()
+        {
+            return string.Format("ServidorID {0}, IP {1}, Hostname {2}, Observacao {3}, Status {4}, " +
+                "TipoServidor {5}, EspacoDisco {6}, Cpu {7}, Memoria {8}, Conteudo {9}",
+                ServidorID, IP, Hostname, Observacao, Status, TipoServidor, EspacoDisco, Cpu, Memoria, Conteudo);
+        }
     }
 }

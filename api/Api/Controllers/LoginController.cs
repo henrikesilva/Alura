@@ -26,20 +26,29 @@ namespace Api.Controllers
         [HttpPost]
         public ActionResult<dynamic> Login([FromBody] Usuario usuario)
         {
-            var user = usuario.Login;
-            var pass = usuario.Senha;
-
-            if (user == null && pass == null)
+            try
             {
-                return NotFound(new { messge = "Usuario ou senha invalidos" });
+                var user = usuario.Login;
+                var pass = usuario.Senha;
+
+                if (user == null && pass == null)
+                {
+                    return NotFound(new { messge = "Usuario ou senha invalidos" });
+                }
+
+                var token = TokenService.GenerateToken(user, pass);
+                return new
+                {
+                    login = usuario.Login,
+                    token
+                };
             }
-
-            var token = TokenService.GenerateToken(user, pass);
-            return new
+            catch (Exception ex)
             {
-                login = usuario.Login,
-                token
-            };
+
+                return BadRequest("Ocorreu um erro na solicitação, por gentileza contate o administrador do sistema" + ex);
+            }
+            
         }
 
     }

@@ -31,8 +31,8 @@ namespace Api.Controllers
             var userAdmin = new Usuario() { Id = "1", Login = "Henrique", Senha = "1234" };
             _usuarioRepository.Cadastrar(userAdmin);
 
-            _servidorRepository.Cadastrar(new Servidor() { ServidorId = 1, Ip = "123.123.123.12", Hostname = "Teste", Observacao = "Teste", Status = "Ativo" });
-            _servidorRepository.Cadastrar(new Servidor() { ServidorId = 2, Ip = "123.123.123.12", Hostname = "Name", Observacao = "Teste", Status = "Ativo" });
+            /*_servidorRepository.Cadastrar(new Servidor() { ServidorId = 1, Ip = "123.123.123.12", Hostname = "Teste", Observacao = "Teste", Status = "Ativo" });
+            _servidorRepository.Cadastrar(new Servidor() { ServidorId = 2, Ip = "123.123.123.12", Hostname = "Name", Observacao = "Teste", Status = "Ativo" });*/
 
             return Ok(new
             {

@@ -5,8 +5,6 @@ using System.Threading.Tasks;
 using Api.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,14 +22,29 @@ namespace Api
             Configuration = configuration;
         }
 
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //CONEXAO COM BANCO EM MEMORIA
             services.AddDbContext<SistemaInventarioContext>(opt => opt.UseInMemoryDatabase("SistemaInventario"));
             services.AddControllers();
 
+            //HABILITA O CORS
+            services.AddCors(options => 
+            {
+                options.AddPolicy(MyAllowSpecificOrigins,
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:4200")
+                        .AllowAnyHeader();
+                    });
+            });
+
+            //HABILITA A AUTENTICACAO A PARTIR DO TOKEN
             var key = Encoding.ASCII.GetBytes(PrivateKey.Secret);
             services.AddAuthentication(auth =>
             {
@@ -66,6 +79,8 @@ namespace Api
 
             app.UseRouting();
 
+            /* HABILITA TODAS AS CONFIGURAÇÕES DE CORS E TOKEN */
+            app.UseCors(MyAllowSpecificOrigins);
             app.UseAuthentication();
             app.UseAuthorization();
 

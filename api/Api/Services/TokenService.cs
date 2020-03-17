@@ -22,6 +22,7 @@ namespace Api.Services
                 {
                     new Claim(ClaimTypes.Name, user)
                 }),
+                Expires = DateTime.UtcNow.AddHours(6),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
